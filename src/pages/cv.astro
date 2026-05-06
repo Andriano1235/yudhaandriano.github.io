@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+     A self-motivated and passionate individual pursuing a Master’s degree in Statistics. I am highly interested in research, particularly in image processing, computer vision, statistical modeling, metaheuristic algorithms, and artificial intelligence. Experienced in medical image research, conference presentations, and writing academic research papers.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Master’s degree in Statistics"
+      subtitle='2024 to 2026 at <a href="https://www.its.ac.id/en/home-en/" target="_blank" class="inline-flex items-center gap-1 text-primary hover:underline">Institut Teknologi Sepuluh Nopember<img src="/Logo-ITS-1.png" alt="ITS Logo" class="w-7 h-4 inline-block"/></a>, Surabaya, Indonesia'
+    />
+    <TimeLineElement
+      title="Bachelor's degree in Informatics and Computer Engineering Education"
+      subtitle='2018 to 2023 at <a href="https://unnes.ac.id/" target="_blank" class="inline-flex items-center gap-1 text-primary hover:underline">Universitas Negeri Semarang<img src="/Logo-UNNES-1.png" alt="Unnes Logo" class="w-4 h-5.7 inline-block"/></a>, Semarang, Indonesia'
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Research Assistant - Budi Sunarko, S.T., M.T., Ph.D."
+      subtitle="31/03/2023 to Current at Universitas Negeri Semarang, Semarang, Indonesia"
+    >
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>Conduct comprehensive literature reviews and synthesize findings into scholarly reports and research papers.</li>
+      <li>Perform research in image processing, computer vision, and predictive modeling to address real-world challenges.</li>
+      <li>Analyze researched problems critically and develop effective, evidence-based solution strategies.</li>
+      <li>Collaborate and engage in discussions with fellow researchers to exchange insights, refine methodologies, and strengthen research outcomes.</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research Assistant - Dr. Anan Nugroho, S.T., M.Eng."
+      subtitle="From 13/06/2024  to 19/02/2025 at Universitas Negeri Semarang, Semarang, Indonesia"
+    >
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>
+        Served as Research Assistant and Research Coordinator in developing lightweight multi-label human detection algorithms for robotic and CCTV platforms, focusing on age, gender, and facial expression recognition.
+      </li>
+      <li>
+        Managed project coordination, technical writing integration, budgeting, documentation, and performance evaluation to ensure effective research implementation.
+      </li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research Assistant - Liftiah, S.Psi., M.Si., Ph.D."
+      subtitle="17/03/2023 to 28/01/2026 at Universitas Negeri Semarang, Semarang, Indonesia"
+    >
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>Assist in interdisciplinary research projects in psychology by investigating the relationship between hypertension, facial characteristics, and perceived facial trustworthiness. </li>
+      <li>Conduct literature reviews and synthesize scientific findings into structured reports, manuscripts, and academic publications. </li>
+      <li>Apply image processing, computer vision, and predictive modeling techniques to support psychological and health-related research objectives. </li>
+      <li>Analyze complex research problems and contribute to the development of data-driven, evidence-based solutions.</li>
+      <li> Collaborate closely with faculty members and fellow researchers in research discussions, methodology refinement, and scientific dissemination.</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research Coordinator"
+      subtitle="in 2021 at Universitas Negeri Semarang, Semarang, Indonesia"
+    >
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>
+        Conducted research to develop a machine learning model to diagnose coronary heart disease (CHD) risk based on facial texture under the supervision of Dr. Anan Nugroho, S.T., M.Eng., which led to one international proceeding.
+      </li>
+      <li>
+        Evaluated algorithms and contributed to the development of a Flask-based web platform for CHD risk detection.
+      </li>
+    </ul>
+    </TimeLineElement>
+
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Awards and Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://drive.google.com/file/d/11RDg9cB7WW28-ogaidnQYWRcccyG--nP/view?usp=sharing" target="_blank"> 2nd Winner on Data Analysis Competition Informatics Festival</a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/file/d/1eNmO3e5LWstBGkPLCKaRrOoNzwNT1cZ-/view?usp=sharing" target="_blank"> Top 10 Poster on Artificial Intelligence Innovation Summit (AIIS)</a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/file/d/1P5jSrcbHCnX4WNMsFbQ9lcYcxArqqutB/view?usp=sharing" target="_blank"> Finalist of the 34th National Student Scientific Week (PIMNAS)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Statistical Analysis</li>
+    <li>Machine Learning</li>
+    <li>Deep Learning</li>
+    <li>Computer Vision</li>
+    <li>Image Processing</li>
+    <li>Predictive Modeling</li>
+    <li>Data Visualization</li>
+    <li>Python Programming</li>
+    <li>Flask Development</li>
+    <li>Research Methodology</li>
+    <li>Scientific Writing</li>
+    <li>Feature Engineering</li>
+    <li>Multivariate Analysis</li>
+    <li>Optimization Algorithms (metaheuristic)</li>
+  </ul>
+</BaseLayout>
