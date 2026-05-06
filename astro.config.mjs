@@ -9,7 +9,7 @@ import rehypeKatex from "rehype-katex";
 export default defineConfig({
   // site: "https://astrofy-template.netlify.app",
   site: 'https://yudhaandriano.github.io',
-  base: 'yudhaandriano.github.io',
+  base: 'Andriano1235',
 
   integrations: [
     mdx(),
