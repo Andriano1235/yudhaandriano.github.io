@@ -8,7 +8,7 @@ import rehypeKatex from "rehype-katex";
 // https://astro.build/config
 export default defineConfig({
   // site: "https://astrofy-template.netlify.app",
-  site: 'https://yudhaandriano.github.io',
+  site: 'https://andriano1235.github.io',
 
   integrations: [
     mdx(),
