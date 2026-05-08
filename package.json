@@ -14,10 +14,10 @@
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
     "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.1",
+    "@astrojs/sitemap": "3.0.1",
     "@astrojs/tailwind": "^5.0.3",
     "@fortawesome/fontawesome-free": "^7.2.0",
-    "astro": "^4.0.2",
+    "astro": "4.0.2",
     "daisyui": "^4.4.10",
     "dayjs": "^1.11.9",
     "katex": "^0.16.45",
