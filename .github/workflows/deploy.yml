@@ -18,12 +18,31 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install, build, and upload your site
-        uses: withastro/action@v6
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
         with:
-          path: .
+          version: 8
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
           node-version: 24
-          package-manager: pnpm
+          cache: pnpm
+
+      - name: Configure pnpm
+        run: |
+          echo "ignore-scripts=false" >> .npmrc
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build Astro site
+        run: pnpm build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
   deploy:
     needs: build
