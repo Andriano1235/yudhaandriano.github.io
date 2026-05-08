@@ -12,11 +12,7 @@ export default defineConfig({
 
   integrations: [
     mdx(),
-    sitemap({
-      filter: (page) => {
-        return typeof page === "string" && page.length > 0;
-      },
-    }),
+    sitemap(),
     tailwind(),
   ],
 
